@@ -37,7 +37,7 @@ add_library({} STATIC IMPORTED GLOBAL)
 set_property(TARGET {} PROPERTY {})
 ```
 
-## steo 6.1: export
+## step 6.1: export library
 Learn
 ```
 target_include_directories({} INTERFACE 
@@ -50,3 +50,6 @@ install(EXPORT      {}
 	NAMESPACE   {}
 	DESTINATION {})
 ```
+
+## step 6.2: use exported library in another project
+

@@ -2,54 +2,23 @@
 
 ### TODO 1
 ```
-add_subdirectory(src)
-add_subdirectory(include)
-add_subdirectory(example)
+include(${CMAKE_INSTALL_PREFIX}/lib/cmake/myLibrary/myLibraryExportTarget.cmake)
 ```
-Use add_subdirectory to make CMAKE run CMakeLists.txt in the subdirectories.
+Include our previous work from Step6.1.
 
-Order matter here, we need to create libraries first, so our executable file can link them.
+include just acts like import in pythion.
 
-# src/CMakeLists.txt
+So, we can use all the things specified with EXPORT in myLibrary.
 
 ### TODO 2
 ```
-- target_include_directories(myLibrary INTERFACE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(myExecutable PRIVATE myLibrary::myLibrary)
 ```
-Delete target_include_directories here because we will use interface library to help us set up include directory.
+Link executable file with library.
 
-# include/CMakeLists.txt
+myLibrary::myLibrary is a combination of NAMESPACE+Target_Name.
 
-### TODO 3
-```
-add_library(myInterfaceLibrary INTERFACE)
-```
-Use INTERFACE keyword to create an interface library.
-
-Interface library doesn't have source code which means it doesn't provide any function.
-
-However, we can still utilize library property to help us in CMAKE, TODO 4 is one of the example.
-
-### TODO 4
-```
-target_include_directories(myInterfaceLibrary INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
-```
-Let all other targets linking the the library (myInterfaceLibrary) have the include directory.
-
-The nice thing here is that we can directly use ${CMAKE_CURRENT_SOURCE_DIR} to specify the include directory.
-
-# exmaple/CMakeLists.txt
-
-### TODO 5
-```
-target_link_libraries(myExecutable PRIVATE myLibrary)
-target_link_libraries(myExecutable PRIVATE myInterfaceLibrary)
-```
-Link the executable file with library, so the function can work.
-
-Without myLibrary, our executable doesn't know description of myFunc().
-
-Without myInterfaceLibrary, our executable isn't able to include "myFunction.h".
+We don't need to give include directory here because we did it through INTERFACE when export the library.
 
 # Build
 ```
@@ -62,7 +31,7 @@ Now, your build folder should be exactly same as build-done.
 
 Run
 ```
-./example/myExecutable
+./myExecutable
 ```
 See the output from your executable file.
 ```
