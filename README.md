@@ -1,8 +1,7 @@
 # List
 
 ## step 1: build an executable file
-Goal:
-learn
+Learn
 ```
 cmake_minimum_required(VERSION )
 project()
