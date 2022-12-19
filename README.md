@@ -36,3 +36,17 @@ Learn
 add_library({} STATIC IMPORTED GLOBAL)
 set_property(TARGET {} PROPERTY {})
 ```
+
+## steo 6.1: export
+Learn
+```
+target_include_directories({} INTERFACE 
+				$<BUILD_INTERFACE:{}>
+				$<INSTALL_INTERFACE:{}>)
+install(FILES {} DESTINATION {})
+install(TARGETS {} DESTINATION {} EXPORT {})
+install(EXPORT      {}
+	FILE 	    {}
+	NAMESPACE   {}
+	DESTINATION {})
+```
