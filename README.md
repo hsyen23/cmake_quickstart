@@ -29,3 +29,10 @@ Learn
 add_library({} INTERFACE)
 target_include_directories({} INTERFACE {})
 ```
+
+## step 5: use external library
+Learn
+```
+add_library({} STATIC IMPORTED GLOBAL)
+set_property(TARGET {} PROPERTY {})
+```
