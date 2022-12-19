@@ -15,3 +15,10 @@ target_include_directories()
 add_library()
 target_link_libraries()
 ```
+
+## step 3: use subdirectories to organize libraries
+Learn
+```
+add_subdirectory()
+target_include_directories({} INTERFACE {})
+```
