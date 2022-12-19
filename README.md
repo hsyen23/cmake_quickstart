@@ -8,3 +8,10 @@ project()
 add_library()
 ```
 
+## step 2: create library and use it
+Learn
+```
+target_include_directories()
+add_library()
+target_link_libraries()
+```
