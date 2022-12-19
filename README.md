@@ -52,4 +52,21 @@ install(EXPORT      {}
 ```
 
 ## step 6.2: use exported library in another project
+Learn
+```
+include()
+```
+## step 7.1: make exported file a package
+Learn
+```
+include(CMakePackageConfigHelpers)
 
+configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
+  ${CMAKE_CURRENT_BINARY_DIR}/{}Config.cmake
+  INSTALL_DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/{})
+```
+## step 7.2: use find_package() to get library quickly
+Learn
+```
+find_package({} REQUIRED)
+```
