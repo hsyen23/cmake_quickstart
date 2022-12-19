@@ -47,7 +47,7 @@ target_link_libraries(myExecutable PRIVATE myInterfaceLibrary)
 ```
 Link the executable file with library, so the function can work.
 
-Without myLibrary, our executable doesn't know what is description of myFunc().
+Without myLibrary, our executable doesn't know description of myFunc().
 
 Without myInterfaceLibrary, our executable isn't able to include "myFunction.h".
 
