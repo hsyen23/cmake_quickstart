@@ -21,7 +21,7 @@ install(FILES ${CMAKE_SOURCE_DIR}/include/myFunction.h
 ```
 Intsall acts just like copy file.
 
-We set the DESTINATION to ${CMAKE_INSTALL_PREFIX}/include because in TODO 1 we assign ${CMAKE_INSTALL_PREFIX}/include to be the directory for target to include.
+We set the DESTINATION to "${CMAKE_INSTALL_PREFIX}/include" because in TODO 1 we assign "${CMAKE_INSTALL_PREFIX}/include" to be the directory for target to include.
 
 ### TODO 3
 ```
