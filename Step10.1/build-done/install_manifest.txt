@@ -1,0 +1,5 @@
+/usr/local/include/myFunction2.h
+/usr/local/lib/libmyLibrary2.a
+/usr/local/lib/cmake/myLibrary2/myLibrary2ExportTarget.cmake
+/usr/local/lib/cmake/myLibrary2/myLibrary2ExportTarget-noconfig.cmake
+/usr/local/lib/cmake/myLibrary2/myLibrary2Config.cmake

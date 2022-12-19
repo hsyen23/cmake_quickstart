@@ -1,0 +1,3 @@
+/home/user/cmake_quickstart/Step10.2/build-done/CMakeFiles/myExecutable.dir
+/home/user/cmake_quickstart/Step10.2/build-done/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Step10.2/build-done/CMakeFiles/rebuild_cache.dir

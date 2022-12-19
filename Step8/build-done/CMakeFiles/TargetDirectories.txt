@@ -1,0 +1,7 @@
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/myLibrary2.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/rebuild_cache.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/list_install_components.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/install.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/install/local.dir
+/home/user/cmake_quickstart/Step8/build-done/CMakeFiles/install/strip.dir

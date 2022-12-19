@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(${CMAKE_CURRENT_LIST_DIR}/myLibrary2ExportTarget.cmake)
+
+check_required_components(myLibrary2)
+
+include(CMakeFindDependencyMacro)
+find_dependency(myLibrary)
