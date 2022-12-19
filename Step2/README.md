@@ -53,3 +53,7 @@ Run
 ./myExecutable
 ```
 See the output from your executable file.
+```
+Hello World from main.cpp
+Hello world from myFunc sourced from myFunction.cpp
+```
