@@ -24,4 +24,8 @@ target_include_directories({} INTERFACE {})
 ```
 
 ## step 4: use interface library
-
+Learn
+```
+add_library({} INTERFACE)
+target_include_directories({} INTERFACE {})
+```

@@ -25,6 +25,8 @@ ${CMAKE_SOURCE_DIR} is a CMake variable which tell the full path to the top leve
 
 PUBLIC will work here, too! But the library object (myLibrary) doesn't need the header file to make it work, so INTERFACE is enough.
 
+# example/CMakeLists.txt
+
 ### TODO 4
 ```
 add_executable(myExecutable main.cpp)

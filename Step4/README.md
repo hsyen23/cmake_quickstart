@@ -38,6 +38,8 @@ Let all other targets linking the the library (myInterfaceLibrary) have the incl
 
 The nice thing here is that we can directly use ${CMAKE_CURRENT_SOURCE_DIR} to specify the include directory.
 
+# exmaple/CMakeLists.txt
+
 ### TODO 5
 ```
 target_link_libraries(myExecutable PRIVATE myLibrary)
