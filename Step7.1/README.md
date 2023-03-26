@@ -13,11 +13,11 @@ configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
   INSTALL_DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/myLibrary
 )
 ```
-First argument is <input>, and we select the Config.cmake.in file
+First argument is input, and we select the Config.cmake.in file
 
-Second argument is <output>, and we assign it to be generated in the build directory with name myLibraryConfig.cmake
+Second argument is output, and we assign it to be generated in the build directory with name myLibraryConfig.cmake
 
-Third argument is to let the {}Config.cmake file know where will be its PACKAGE_PREFIX_DIR. (We need this because right now {}Config.cmake will be generated in build folder, it has no idea what will be its prefix in the future. Therefore, we need to add this line to include this information.)
+Third argument is to let the {}Config.cmake file know where will be its PACKAGE_PREFIX_DIR. (We need this because right now {}Config.cmake will be generated in build folder, it has no idea what will be its prefix in the future. Therefore, we need to add this line to include this information.) More detail to check this discussion: https://stackoverflow.com/questions/70209356/whats-the-use-of-configure-package-config-file-option-install-destination.
 
 Path explanation:
 

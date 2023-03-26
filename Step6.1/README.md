@@ -66,13 +66,13 @@ And, after installation you will see following files.
 ```
 usr/local/include/myFunction.h
 ```
-^-- caused by TODO 2
+^-- created by TODO 2
 ```
 usr/local/lib/libmyLibrary.a
 ```
-^-- caused by TODO 3
+^-- created by TODO 3
 ```
 /usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake
 /usr/local/lib/cmake/myLibrary/myLibraryExportTarget-noconfig.cmake
 ```
-^-- caused by TODO 4
+^-- created by TODO 4
