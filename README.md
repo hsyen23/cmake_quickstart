@@ -74,8 +74,15 @@ find_package({} REQUIRED)
 ```
 
 ## Step 8: build library that requires existed packages
+Learn
+
+How to build packages that use existed packages.
 
 ## Step 9: use find_dependency()
+Learn
+```
+find_dependency()
+```
 
 ## Step 10.1: add find_dependency() in Config.cmake.in
 

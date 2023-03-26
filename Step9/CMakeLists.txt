@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.1)
 
 project(SimpleCmakeProject)
 
+# TODO 1
 include(CMakeFindDependencyMacro)
+
+# TODO 2
 find_dependency(myLibrary)
 
 find_package(myLibrary2 REQUIRED)

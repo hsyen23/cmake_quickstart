@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 project(SimpleCmakeProject)
 
+# TODO 1: use find_package() to load existed packages.
 find_package(myLibrary REQUIRED)
 
 add_library(myLibrary2 myFunction2.cpp)
@@ -13,6 +14,7 @@ target_include_directories(myLibrary2 INTERFACE
 install(FILES ./myFunction2.h
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 
+# TODO 2: link our new library with old library from package loaded before (TODO 1).
 target_link_libraries(myLibrary2 PUBLIC myLibrary::myLibrary)
 
 install(TARGETS myLibrary2
