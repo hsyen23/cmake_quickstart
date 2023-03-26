@@ -4,5 +4,8 @@ include(${CMAKE_CURRENT_LIST_DIR}/myLibrary2ExportTarget.cmake)
 
 check_required_components(myLibrary2)
 
+# TODO 1
 include(CMakeFindDependencyMacro)
+
+# TODO 2
 find_dependency(myLibrary)

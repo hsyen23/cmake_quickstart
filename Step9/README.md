@@ -19,11 +19,9 @@ To use find_dependency(), we need to include CMakeFindDependencyMacro.
 ```
 find_dependency(myLibrary)
 ```
-Link the old library existed in loaded package.
+Let cmake find the dependencies of myLibrary2.
 
-Note here that we don't need to specify include directory for header file of the old library.
-
-This is because when we build the old package we use target_include_directories(), anyone uses the target(myLibrary) will automatically know the include direcotry.
+We use find_package(myLibrary2), therefore it's clear that cmake doesn't know about myLibrary.
 
 Without this line, there will be compile error obviously.
 # Build
