@@ -85,6 +85,11 @@ find_dependency()
 ```
 
 ## Step 10.1: add find_dependency() in Config.cmake.in
+Learn
+
+How to exclude find_dependency() for user (now it is creator's respondsibility).
 
 ## Step 10.2: we don't need to find_dependency() for executalbe in CMakeLists.txt anymore beacuse when you find the package, it will find the dependency for you (due to Step 10.1)
+Learn
 
+What is difference from Step 9.
