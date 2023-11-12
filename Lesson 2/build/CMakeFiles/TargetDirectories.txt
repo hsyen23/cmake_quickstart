@@ -1,0 +1,4 @@
+/home/user/cmake_quickstart/Lesson 2/build/CMakeFiles/myExecutable.dir
+/home/user/cmake_quickstart/Lesson 2/build/CMakeFiles/myLibrary.dir
+/home/user/cmake_quickstart/Lesson 2/build/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Lesson 2/build/CMakeFiles/rebuild_cache.dir
