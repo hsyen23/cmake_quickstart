@@ -6,13 +6,13 @@ target_include_directories(myLibrary INTERFACE
 				$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
 				$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/include>)
 ```
-BUILD_INTERFACE is the stage when you build the target.
+`BUILD_INTERFACE` is the stage when you build the target.
 
-INSTALL_INTERFACE is the stage when you try to install the target.
+`INSTALL_INTERFACE` is the stage when you try to install the target.
 
-Without INSTALL_INTERFACE, when you link the installed target (myLibrary) you are not able find the include directory.
+Without `INSTALL_INTERFACE`, when you link the installed target (myLibrary) you are not able find the include directory.
 
-${CMAKE_INSTALL_PREFIX} is CMAKE variable to usr/local defaultly.
+`${CMAKE_INSTALL_PREFIX}` is CMAKE variable to usr/local defaultly.
 
 ### TODO 2
 ```
@@ -21,7 +21,7 @@ install(FILES ${CMAKE_SOURCE_DIR}/include/myFunction.h
 ```
 Intsall acts just like copy file.
 
-We set the DESTINATION to "${CMAKE_INSTALL_PREFIX}/include" because in TODO 1 we assign "${CMAKE_INSTALL_PREFIX}/include" to be the directory for target to include.
+We set the `DESTINATION` to `${CMAKE_INSTALL_PREFIX}/include` because in TODO 1 we assign `${CMAKE_INSTALL_PREFIX}/include` to be the directory for target to include.
 
 ### TODO 3
 ```
@@ -29,9 +29,9 @@ install(TARGETS myLibrary
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
 	EXPORT myLibraryExportTarget)
 ```
-install target and specify EXPORT, so CMAKE know this target is a part of export while creating export .cmake file.
+install target and specify `EXPORT`, so CMAKE know this target is a part of export while creating export .cmake file.
 
-EXPORT name needs to be same for your export .cmake file.
+`EXPORT` name needs to be same for your export .cmake file.
 
 # CMakeLists.txt
 
@@ -44,13 +44,13 @@ install(EXPORT myLibraryExportTarget
 ```
 Create export file, so another CMAKE file is able to use our target rapidly.
 
-EXPORT: the export target name, need to match all EXPORT name for all targets waiting exporting.
+`EXPORT`: the export target name, need to match all `EXPORT` name for all targets waiting exporting.
 
-FILE: the physical export .cmake file name.
+`FILE`: the physical exported .cmake file name.
 
-NAMESPACE: Prefix for other people who want to use the library, so CMAKE know this is imported file in other CMakeLists.txt.
+`NAMESPACE`: Prefix for other people who want to use the library, so CMAKE know this is imported file in other CMakeLists.txt.
 
-DESTINATION: Where to store the export .cmake file. Convention is usr/local/lib/cmake/{Library_Name}
+`DESTINATION`: Where to store the exported .cmake file. Convention is `usr/local/lib/cmake/{Library_Name}`
 
 # Build
 ```

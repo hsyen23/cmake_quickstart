@@ -1,10 +1,10 @@
-/home/user/cmake_quickstart/Step4/build-done/CMakeFiles/edit_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/CMakeFiles/rebuild_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/src/CMakeFiles/myLibrary.dir
-/home/user/cmake_quickstart/Step4/build-done/src/CMakeFiles/edit_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/src/CMakeFiles/rebuild_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/include/CMakeFiles/edit_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/include/CMakeFiles/rebuild_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/example/CMakeFiles/myExecutable.dir
-/home/user/cmake_quickstart/Step4/build-done/example/CMakeFiles/edit_cache.dir
-/home/user/cmake_quickstart/Step4/build-done/example/CMakeFiles/rebuild_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/CMakeFiles/rebuild_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/src/CMakeFiles/myLibrary.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/src/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/src/CMakeFiles/rebuild_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/include/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/include/CMakeFiles/rebuild_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/example/CMakeFiles/myExecutable.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/example/CMakeFiles/edit_cache.dir
+/home/user/cmake_quickstart/Lesson 4/build-done/example/CMakeFiles/rebuild_cache.dir

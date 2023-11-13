@@ -23,21 +23,20 @@ add_subdirectory()
 target_include_directories({} INTERFACE {})
 ```
 
-## step 4: use interface library
+## Lesson 4: create interface library
 Learn
 ```
 add_library({} INTERFACE)
-target_include_directories({} INTERFACE {})
 ```
 
-## step 5: use external library
+## Lesson 5: use external library (.a, .so)
 Learn
 ```
 add_library({} STATIC IMPORTED GLOBAL)
 set_property(TARGET {} PROPERTY {})
 ```
 
-## step 6.1: export library
+## Lesson 6.1: export library
 Learn
 ```
 target_include_directories({} INTERFACE 
@@ -51,7 +50,7 @@ install(EXPORT      {}
 	DESTINATION {})
 ```
 
-## step 6.2: use exported library in another project
+## Lesson 6.2: use exported library in another project
 Learn
 ```
 include()

@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/cmake_quickstart/Step4/include
+# Install script for directory: /home/user/cmake_quickstart/Lesson 4/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,6 +1,6 @@
 add_library(myLibrary myFunction.cpp)
 
-#TODO 1: use $<INSTALL_INTERFACE:> to tell CMAKE include diretories while install.
+#TODO 1: use $<INSTALL_INTERFACE:> to tell CMAKE include diretories while installation.
 target_include_directories(myLibrary INTERFACE 
 				$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>
 				$<INSTALL_INTERFACE:${CMAKE_INSTALL_PREFIX}/include>)

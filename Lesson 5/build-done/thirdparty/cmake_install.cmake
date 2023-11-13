@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/cmake_quickstart/Step5/thirdparty
+# Install script for directory: /home/user/cmake_quickstart/Lesson 5/thirdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

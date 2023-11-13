@@ -6,9 +6,9 @@ add_subdirectory(src)
 add_subdirectory(include)
 add_subdirectory(example)
 ```
-Use add_subdirectory to make CMAKE run CMakeLists.txt in the subdirectories.
+Use `add_subdirectory` to make CMAKE run CMakeLists.txt in the subdirectories.
 
-Order matter here, we need to create libraries first, so our executable file can link them.
+Order matters, we need to create libraries first, so our executable file can link them.
 
 # src/CMakeLists.txt
 
@@ -16,7 +16,7 @@ Order matter here, we need to create libraries first, so our executable file can
 ```
 - target_include_directories(myLibrary INTERFACE ${CMAKE_SOURCE_DIR}/include)
 ```
-Delete target_include_directories here because we will use interface library to help us set up include directory.
+Delete `target_include_directories` here because we will use interface library to help us set up the include directory.
 
 # include/CMakeLists.txt
 
@@ -24,7 +24,7 @@ Delete target_include_directories here because we will use interface library to 
 ```
 add_library(myInterfaceLibrary INTERFACE)
 ```
-Use INTERFACE keyword to create an interface library.
+Use `INTERFACE` keyword to create an interface library.
 
 Interface library doesn't have source code which means it doesn't provide any function.
 
@@ -36,7 +36,9 @@ target_include_directories(myInterfaceLibrary INTERFACE ${CMAKE_CURRENT_SOURCE_D
 ```
 Let all other targets linking the the library (myInterfaceLibrary) have the include directory.
 
-The nice thing here is that we can directly use ${CMAKE_CURRENT_SOURCE_DIR} to specify the include directory.
+The nice thing here is that we can directly use `${CMAKE_CURRENT_SOURCE_DIR}` to specify the include directory.
+
+`${CMAKE_SOURCE_DIR}` refers back to root CMakeLists source directory, so we can't use `${CMAKE_SOURCE_DIR}` here.
 
 # exmaple/CMakeLists.txt
 
@@ -49,7 +51,7 @@ Link the executable file with library, so the function can work.
 
 Without myLibrary, our executable doesn't know description of myFunc().
 
-Without myInterfaceLibrary, our executable isn't able to include "myFunction.h".
+Without myInterfaceLibrary, our executable isn't able to `#include "myFunction.h"`.
 
 # Build
 ```

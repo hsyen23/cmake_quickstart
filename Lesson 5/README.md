@@ -4,7 +4,7 @@
 ```
 #include "externalLibrary.h"
 ```
-include header file, so we can use function in external library.
+include header file, so we can use functions in external library.
 
 # CMakeLists.txt
 
@@ -13,7 +13,7 @@ include header file, so we can use function in external library.
 add_subdirectory(thirdparty)
 add_subdirectory(example)
 ```
-add subdirectories to make CMAKE run CMakeLists.txt in the subdirectories.
+`add_subdirectory` to make CMAKE run CMakeLists.txt in the subdirectories.
 
 # thirdparty/CMakeLists.txt
 
@@ -23,15 +23,13 @@ add_library(myThirdPartyLibrary STATIC IMPORTED GLOBAL)
 ```
 Create a library target.
 
-STATIC because we will import a static library.
+`STATIC` because we will import a static library.
 
-IMPORTED to specify this library is imported.
+`IMPORTED` to specify this library is imported.
 
-For IMPORTED, the target name has scope in the directory in which it is created and below.
+By default, the `IMPORTED` target name has scope in the directory in which it is created and below. We can use the `GLOBAL` option to extended visibility so that the target is accessible globally in the build system.
 
-GLOBAL to make other CMakeLists.txt outside this scope can use the target (myThirdPartyLibrary).
-
-Without GLOBAL, CMakeLists.txt in example folder cannot link myThirdPartyLibrary.
+Without `GLOBAL`, CMakeLists.txt in example folder cannot link myThirdPartyLibrary.
 
 ### TODO 4
 ```
@@ -55,7 +53,7 @@ target_link_libraries(myExecutable PRIVATE myThirdPartyLibrary)
 ```
 Link the executable file with library, so the function can work.
 
-Because we specify GLOBAL for myThirdPartyLibrary, so we can use it here.
+Because we specify `GLOBAL` for myThirdPartyLibrary, so we can use it here.
 
 # Build
 ```

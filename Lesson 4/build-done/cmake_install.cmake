@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/cmake_quickstart/Step4
+# Install script for directory: /home/user/cmake_quickstart/Lesson 4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/cmake_quickstart/Step4/build-done/src/cmake_install.cmake")
-  include("/home/user/cmake_quickstart/Step4/build-done/include/cmake_install.cmake")
-  include("/home/user/cmake_quickstart/Step4/build-done/example/cmake_install.cmake")
+  include("/home/user/cmake_quickstart/Lesson 4/build-done/src/cmake_install.cmake")
+  include("/home/user/cmake_quickstart/Lesson 4/build-done/include/cmake_install.cmake")
+  include("/home/user/cmake_quickstart/Lesson 4/build-done/example/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/cmake_quickstart/Step4/build-done/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/user/cmake_quickstart/Lesson 4/build-done/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
