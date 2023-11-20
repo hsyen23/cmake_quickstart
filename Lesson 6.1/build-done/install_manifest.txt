@@ -1,4 +1,4 @@
 /usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake
 /usr/local/lib/cmake/myLibrary/myLibraryExportTarget-noconfig.cmake
-/usr/local/test_include/myFunction.h
+/usr/local/include/myFunction.h
 /usr/local/lib/libmyLibrary.a

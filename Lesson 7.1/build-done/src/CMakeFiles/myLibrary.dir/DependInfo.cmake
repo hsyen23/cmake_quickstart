@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/user/cmake_quickstart/Step7.1/src/myFunction.cpp" "src/CMakeFiles/myLibrary.dir/myFunction.cpp.o" "gcc" "src/CMakeFiles/myLibrary.dir/myFunction.cpp.o.d"
+  "/home/user/cmake_quickstart/Lesson 7.1/src/myFunction.cpp" "src/CMakeFiles/myLibrary.dir/myFunction.cpp.o" "gcc" "src/CMakeFiles/myLibrary.dir/myFunction.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

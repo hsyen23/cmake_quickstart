@@ -50,7 +50,7 @@ Create export file, so another CMAKE file is able to use our target rapidly.
 
 `NAMESPACE`: Prefix for other people who want to use the library, so CMAKE know this is imported file in other CMakeLists.txt.
 
-`DESTINATION`: Where to store the exported .cmake file. Convention is `usr/local/lib/cmake/{Library_Name}`
+`DESTINATION`: Where to store the exported .cmake file after running install command. Convention is `usr/local/lib/cmake/{Library_Name}`
 
 # Build
 ```
@@ -58,11 +58,16 @@ mkdir build
 cd build
 cmake ..
 cmake --build .
-sudo cmake --install .
 ```
 Now, your build folder should be exactly same as build-done.
 
-And, after installation you will see following files.
+You will see `xx.cmake` and `xx-nonconfig.cmake` in `Export/xxx/` folder.
+
+# Install
+```
+sudo cmake --install .
+```
+After installation you can see following files installed.
 ```
 usr/local/include/myFunction.h
 ```

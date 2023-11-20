@@ -5,6 +5,7 @@ project(SimpleCmakeProject)
 # TODO 1: use find_package() to load existed packages.
 find_package(myLibrary REQUIRED)
 
+# TODO 2: create and set up a new library sourced by our new .cpp file.
 add_library(myLibrary2 myFunction2.cpp)
 
 target_include_directories(myLibrary2 INTERFACE
@@ -14,9 +15,10 @@ target_include_directories(myLibrary2 INTERFACE
 install(FILES ./myFunction2.h
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/include)
 
-# TODO 2: link our new library with old library from package loaded before (TODO 1).
+# TODO 3: link our new library with old library from package loaded before (TODO 1).
 target_link_libraries(myLibrary2 PUBLIC myLibrary::myLibrary)
 
+# Export and Package our new library
 install(TARGETS myLibrary2
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
 	EXPORT myLibrary2ExportTarget)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/user/cmake_quickstart/Step6.1
+# Install script for directory: /home/user/cmake_quickstart/Lesson 6.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,18 +42,22 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake")
-    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+    file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake"
-         "/home/user/cmake_quickstart/Step6.1/build-done/CMakeFiles/Export/_usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake")
-    if(EXPORT_FILE_CHANGED)
-      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget-*.cmake")
-      if(OLD_CONFIG_FILES)
-        message(STATUS "Old export file \"$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
-        file(REMOVE ${OLD_CONFIG_FILES})
+         "/home/user/cmake_quickstart/Lesson 6.1/build-done/CMakeFiles/Export/8ea3f958cb2b50952f3489841871792e/myLibraryExportTarget.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}/usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
       endif()
+      unset(_cmake_old_config_files)
     endif()
+    unset(_cmake_export_file_changed)
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
    "/usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake")
@@ -63,8 +67,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/cmake/myLibrary" TYPE FILE FILES "/home/user/cmake_quickstart/Step6.1/build-done/CMakeFiles/Export/_usr/local/lib/cmake/myLibrary/myLibraryExportTarget.cmake")
-  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+  file(INSTALL DESTINATION "/usr/local/lib/cmake/myLibrary" TYPE FILE FILES "/home/user/cmake_quickstart/Lesson 6.1/build-done/CMakeFiles/Export/8ea3f958cb2b50952f3489841871792e/myLibraryExportTarget.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
     list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
      "/usr/local/lib/cmake/myLibrary/myLibraryExportTarget-noconfig.cmake")
     if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -73,13 +77,13 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
       message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
     endif()
-    file(INSTALL DESTINATION "/usr/local/lib/cmake/myLibrary" TYPE FILE FILES "/home/user/cmake_quickstart/Step6.1/build-done/CMakeFiles/Export/_usr/local/lib/cmake/myLibrary/myLibraryExportTarget-noconfig.cmake")
+    file(INSTALL DESTINATION "/usr/local/lib/cmake/myLibrary" TYPE FILE FILES "/home/user/cmake_quickstart/Lesson 6.1/build-done/CMakeFiles/Export/8ea3f958cb2b50952f3489841871792e/myLibraryExportTarget-noconfig.cmake")
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/user/cmake_quickstart/Step6.1/build-done/src/cmake_install.cmake")
+  include("/home/user/cmake_quickstart/Lesson 6.1/build-done/src/cmake_install.cmake")
 
 endif()
 
@@ -91,5 +95,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/user/cmake_quickstart/Step6.1/build-done/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/user/cmake_quickstart/Lesson 6.1/build-done/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

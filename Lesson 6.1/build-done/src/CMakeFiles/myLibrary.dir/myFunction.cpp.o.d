@@ -1,5 +1,5 @@
 src/CMakeFiles/myLibrary.dir/myFunction.cpp.o: \
- /home/user/cmake_quickstart/Step6.1/src/myFunction.cpp \
+ /home/user/cmake_quickstart/Lesson\ 6.1/src/myFunction.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

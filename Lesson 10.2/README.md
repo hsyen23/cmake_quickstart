@@ -39,3 +39,8 @@ Hello world from myFunc2() sourced by myFunction2.cpp
 Use myFunc() from myFunction.h
 Hello world from myFunc sourced from myFunction.cpp
 ```
+
+# Conclusion
+Even though we don't need to write `find_dependency(myLibrary)` in `CMakeLists.txt`, it is still executed inside `find_package(myLibrary2)`. 
+
+Moreover, `find_dependency(myLibrary)` is just a wrapper of `find_package(myLibrary)`, we still need to install `myLibrary` beforehand (has been done in Lesson 7.1). Otherwise, there will be compile error.

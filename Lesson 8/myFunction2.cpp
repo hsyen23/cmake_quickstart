@@ -6,7 +6,7 @@
 void myFunc2(){
 
     std::cout << "Hello world from myFunc2() sourced by myFunction2.cpp\n";
-    std::cout << "Use myFunc() from myFunction.h\n";
+    std::cout << "After this line, use myFunc() from myLibrary\n";
     myFunc();
 
 }

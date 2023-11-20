@@ -56,7 +56,7 @@ Learn
 include()
 ```
 
-## step 7.1: make exported file a package
+## Lesson 7.1: How to create a package
 Learn
 ```
 include(CMakePackageConfigHelpers)
@@ -66,27 +66,27 @@ configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
   INSTALL_DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/{})
 ```
 
-## step 7.2: use find_package() to get library quickly
+## Lesson 7.2: How to use `find_package()`
 Learn
 ```
 find_package({} REQUIRED)
 ```
 
-## Step 8: build library that requires existed packages
+## Lesson 8: build library that requires existed packages
 Learn
 
 How to build packages that use existed packages.
 
-## Step 9: use find_dependency()
+## Lesson 9: How to use `find_dependency()`
 Learn
 ```
 find_dependency()
 ```
 
-## Step 10.1: add find_dependency() in Config.cmake.in
+## Lesson 10: pack `find_dependency()` into Package
 Learn
 
-How to exclude find_dependency() for user (now it is creator's respondsibility).
+Write `find_dependency()` inside `Config.cmake.in` while creating the package, so other package users will automatically search for the package's dependencies. 
 
 ## Step 10.2: we don't need to find_dependency() for executalbe in CMakeLists.txt anymore beacuse when you find the package, it will find the dependency for you (due to Step 10.1)
 Learn

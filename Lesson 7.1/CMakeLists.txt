@@ -8,7 +8,8 @@ install(EXPORT myLibraryExportTarget
 	FILE myLibraryExportTarget.cmake
 	NAMESPACE myLibrary::
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/myLibrary)
-	
+#---Above is same code from Lesson 6.1---
+
 #TODO 1: include CMakePackageConfigHelpers, so we can package our exoport files
 include(CMakePackageConfigHelpers)
 
@@ -18,6 +19,6 @@ configure_package_config_file(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
   INSTALL_DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/myLibrary
 )
 
-#TODO 3: install .cmake file to the same directory of the export .cmake file. 
+#TODO 3: install xxxConfig.cmake file to the same directory of the export .cmake file. 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/myLibraryConfig.cmake
 	DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/cmake/myLibrary)

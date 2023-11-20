@@ -1,11 +1,13 @@
 # Brief introduction
-The situation here is that our program needs to use function of myLibrary2(a library) in the myLibrary2 package.
+The situation here is that our program needs to use function from myLibrary2(a library) from myLibrary2 package.
 
 However, the library(myLibrary2) is built upon another package(myLibrary).
 
-Then, we say myLibrary is one of the dependencies of myLibrary2.
+In this case, we say myLibrary is one of the dependencies of myLibrary2.
 
-That is why we need to specify find_dependency(), otherwise functions from myLibrary2 are not complete (miss parts from myLibrary).
+That is why we need to specify `find_dependency()`, otherwise functions from myLibrary2 are not complete (miss parts from myLibrary).
+
+`find_dependency()` is just a wrapper around `find_package()` with better informative diagnostic message.
 
 # CMakeLists.txt
 
@@ -19,9 +21,7 @@ To use find_dependency(), we need to include CMakeFindDependencyMacro.
 ```
 find_dependency(myLibrary)
 ```
-Let cmake find the dependencies of myLibrary2.
-
-We use find_package(myLibrary2), therefore it's clear that cmake doesn't know about myLibrary.
+Let cmake find myLibrary, the dependency of myLibrary2.
 
 Without this line, there will be compile error obviously.
 # Build
