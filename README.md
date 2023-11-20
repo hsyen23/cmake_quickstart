@@ -83,12 +83,12 @@ Learn
 find_dependency()
 ```
 
-## Lesson 10: pack `find_dependency()` into Package
+## Lesson 10.1: pack `find_dependency()` into Package
 Learn
 
 Write `find_dependency()` inside `Config.cmake.in` while creating the package, so other package users will automatically search for the package's dependencies. 
 
-## Step 10.2: we don't need to find_dependency() for executalbe in CMakeLists.txt anymore beacuse when you find the package, it will find the dependency for you (due to Step 10.1)
+## Lesson 10.2: remove `find_dependency()` in `CMakeLists.txt`
 Learn
 
-What is difference from Step 9.
+What is difference from Lesson 9.
